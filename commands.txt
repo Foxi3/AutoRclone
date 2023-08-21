@@ -1,0 +1,9 @@
+pip3 install -r requirements.txt
+python gen_sa_accounts.py --quick-setup 1 --new-only
+python add_to_google_group.py -g email@email.com
+python rclone_sa_magic.py -s driveidgoeshere -d driveidgoeshere -b 1 -e 25
+python rclone_sa_magic.py -s driveidgoeshere -d driveidgoeshere -b 25 -e 50
+
+
+https://console.developers.google.com/apis/api/iam.googleapis.com/overview
+https://console.cloud.google.com/apis/api/drive.googleapis.com/
